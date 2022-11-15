@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:4200/addreport -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Inventory_Managing_System</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+  <link rel="stylesheet" href="./Adding product_files/font-awesome.min.css">
+  <link rel="stylesheet" href="./Adding product_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./Adding product_files/styles.css"><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */</style><style>input[type=text][_ngcontent-gud-c78], select[_ngcontent-gud-c78], textarea[_ngcontent-gud-c78]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type=number][_ngcontent-gud-c78], select[_ngcontent-gud-c78], textarea[_ngcontent-gud-c78]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label[_ngcontent-gud-c78] {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+input[type=submit][_ngcontent-gud-c78] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+.container[_ngcontent-gud-c78] {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+.col-25[_ngcontent-gud-c78] {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+.col-75[_ngcontent-gud-c78] {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+.row[_ngcontent-gud-c78]:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZHJlcG9ydC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsa0JBQWtCO0VBQ2xCLHNCQUFzQjtFQUN0QixnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGtCQUFrQjtFQUNsQixzQkFBc0I7RUFDdEIsZ0JBQWdCO0FBQ2xCO0FBRUUsa0RBQWtEO0FBQ2xEO0lBQ0UseUJBQXlCO0lBQ3pCLHFCQUFxQjtFQUN2QjtBQUVBLDRCQUE0QjtBQUM1QjtJQUNFLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsZUFBZTtJQUNmLFlBQVk7RUFDZDtBQUVBLHdCQUF3QjtBQUN4QjtJQUNFLGtCQUFrQjtJQUNsQix5QkFBeUI7SUFDekIsYUFBYTtFQUNmO0FBRUEsMENBQTBDO0FBQzFDO0lBQ0UsV0FBVztJQUNYLFVBQVU7SUFDVixlQUFlO0VBQ2pCO0FBRUEsMENBQTBDO0FBQzFDO0lBQ0UsV0FBVztJQUNYLFVBQVU7SUFDVixlQUFlO0VBQ2pCO0FBRUEsbUNBQW1DO0FBQ25DO0lBQ0UsV0FBVztJQUNYLGNBQWM7SUFDZCxXQUFXO0VBQ2IiLCJmaWxlIjoiYWRkcmVwb3J0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpbnB1dFt0eXBlPXRleHRdLCBzZWxlY3QsIHRleHRhcmVhe1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIHBhZGRpbmc6IDEycHg7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcclxuICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICByZXNpemU6IHZlcnRpY2FsO1xyXG59XHJcbmlucHV0W3R5cGU9bnVtYmVyXSwgc2VsZWN0LCB0ZXh0YXJlYXtcclxuICB3aWR0aDogMTAwJTtcclxuICBwYWRkaW5nOiAxMnB4O1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XHJcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgcmVzaXplOiB2ZXJ0aWNhbDtcclxufVxyXG4gIFxyXG4gIC8qIFN0eWxlIHRoZSBsYWJlbCB0byBkaXNwbGF5IG5leHQgdG8gdGhlIGlucHV0cyAqL1xyXG4gIGxhYmVsIHtcclxuICAgIHBhZGRpbmc6IDEycHggMTJweCAxMnB4IDA7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgfVxyXG4gIFxyXG4gIC8qIFN0eWxlIHRoZSBzdWJtaXQgYnV0dG9uICovXHJcbiAgaW5wdXRbdHlwZT1zdWJtaXRdIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMwNEFBNkQ7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDIwcHg7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICBmbG9hdDogcmlnaHQ7XHJcbiAgfVxyXG4gIFxyXG4gIC8qIFN0eWxlIHRoZSBjb250YWluZXIgKi9cclxuICAuY29udGFpbmVyIHtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmMmYyZjI7XHJcbiAgICBwYWRkaW5nOiAyMHB4O1xyXG4gIH1cclxuICBcclxuICAvKiBGbG9hdGluZyBjb2x1bW4gZm9yIGxhYmVsczogMjUlIHdpZHRoICovXHJcbiAgLmNvbC0yNSB7XHJcbiAgICBmbG9hdDogbGVmdDtcclxuICAgIHdpZHRoOiAyNSU7XHJcbiAgICBtYXJnaW4tdG9wOiA2cHg7XHJcbiAgfVxyXG4gIFxyXG4gIC8qIEZsb2F0aW5nIGNvbHVtbiBmb3IgaW5wdXRzOiA3NSUgd2lkdGggKi9cclxuICAuY29sLTc1IHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gICAgd2lkdGg6IDc1JTtcclxuICAgIG1hcmdpbi10b3A6IDZweDtcclxuICB9XHJcbiAgXHJcbiAgLyogQ2xlYXIgZmxvYXRzIGFmdGVyIHRoZSBjb2x1bW5zICovXHJcbiAgLnJvdzphZnRlciB7XHJcbiAgICBjb250ZW50OiBcIlwiO1xyXG4gICAgZGlzcGxheTogdGFibGU7XHJcbiAgICBjbGVhcjogYm90aDtcclxuICB9Il19 */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJoZWFkZXIuY29tcG9uZW50LmNzcyJ9 */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJuYXZiYXIuY29tcG9uZW50LmNzcyJ9 */</style><style>h5[_ngcontent-gud-c70]{
+    text-align: center;
+    bottom: 10px;
+    width: 100%;
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWixXQUFXO0VBQ2IiLCJmaWxlIjoiZm9vdGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoNXtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGJvdHRvbTogMTBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuXHJcbiJdfQ== */</style></head>
+<body>
+  <div class="g-signin2" data-onsuccess="onSignIn" data-longtitle="true"></div>
+  <script src="./Adding product_files/popper.min.js.download" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="./Adding product_files/bootstrap.min.js.download" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+  <app-root _nghost-gud-c85="" ng-version="14.2.7"><router-outlet _ngcontent-gud-c85=""></router-outlet><app-addreport _nghost-gud-c78=""><app-header _ngcontent-gud-c78="" _nghost-gud-c69=""><header _ngcontent-gud-c69="" id="my-header"><nav _ngcontent-gud-c69="" class="navbar bg-dark navbar-expand-lg"><a _ngcontent-gud-c69="" href="http://localhost:4200/index.html" class="navbar-brand"><img _ngcontent-gud-c69="" src="./Adding product_files/517c8a2df53f4cbfb2be39bdcca3a27b.png" height="50" alt="TCE" loading="lazy" class="d-inline-block align-top"></a><button _ngcontent-gud-c69="" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ml-auto mr-2"><i _ngcontent-gud-c69="" class="fas fa-bars"></i></button><div _ngcontent-gud-c69="" id="navbarNav" class="collapse navbar-collapse" style="flex-direction: row-reverse; margin-right: 8rem;"><ul _ngcontent-gud-c69="" class="navbar-nav ml-auto"><li _ngcontent-gud-c69="" class="nav-item"><a _ngcontent-gud-c69="" href="http://localhost:4200/dashboard" class="nav-link"><span _ngcontent-gud-c69="" class="item_outer"> Home </span></a></li><li _ngcontent-gud-c69="" class="nav-item"></li><li _ngcontent-gud-c69="" class="nav-item"><a _ngcontent-gud-c69="" href="http://localhost:4200/employee" class="nav-link"><span _ngcontent-gud-c69="" class="item_outer"> Staff</span></a></li><li _ngcontent-gud-c69="" class="nav-item"><a _ngcontent-gud-c69="" href="http://localhost:4200/contactus" class="nav-link"><span _ngcontent-gud-c69="" class="item_outer"> Contact us </span></a></li><li _ngcontent-gud-c69="" class="nav-item"><a _ngcontent-gud-c69="" href="http://localhost:4200/" class="nav-link"><i _ngcontent-gud-c69="" class="fas fa-sign-out-alt"></i><span _ngcontent-gud-c69="">Log Out</span></a></li></ul></div></nav></header></app-header><div _ngcontent-gud-c78="" class="row"><div _ngcontent-gud-c78="" class="col-2"><app-navbar _ngcontent-gud-c78="" _nghost-gud-c71=""><nav _ngcontent-gud-c71="" id="sidebar"><ul _ngcontent-gud-c71="" class="nav nav-pills nav-fill"><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""><li _ngcontent-gud-c71="" class="nav-item"><a _ngcontent-gud-c71="" href="http://localhost:4200/dashboard" class="nav-link" ng-reflect-ng-class=""><i _ngcontent-gud-c71="" class="fa fa-dashboard"></i> Dashboard</a></li><li _ngcontent-gud-c71="" class="nav-item"><a _ngcontent-gud-c71="" href="http://localhost:4200/report" class="nav-link" ng-reflect-ng-class=""><i _ngcontent-gud-c71="" class="fa fa-file"></i>Products</a></li><li _ngcontent-gud-c71="" class="nav-item"><a _ngcontent-gud-c71="" href="http://localhost:4200/addreport" class="nav-link active" ng-reflect-ng-class="active"><i _ngcontent-gud-c71="" class="fa fa-upload"></i>Add Products</a></li><li _ngcontent-gud-c71="" class="nav-item"><a _ngcontent-gud-c71="" href="http://localhost:4200/addcustomer" class="nav-link" ng-reflect-ng-class=""><i _ngcontent-gud-c71="" class="fa fa-suitcase"></i>Add sell</a></li><li _ngcontent-gud-c71="" class="nav-item"><a _ngcontent-gud-c71="" href="http://localhost:4200/customer" class="nav-link" ng-reflect-ng-class=""><i _ngcontent-gud-c71="" class="fa fa-sellsy"></i>Sell Report</a></li><li _ngcontent-gud-c71="" class="nav-item"><a _ngcontent-gud-c71="" href="http://localhost:4200/suppliers" class="nav-link" ng-reflect-ng-class=""><i _ngcontent-gud-c71="" class="fa fa-suitcase"></i>Suppliers</a></li><li _ngcontent-gud-c71="" class="nav-item"><a _ngcontent-gud-c71="" href="http://localhost:4200/addsuppliers" class="nav-link" ng-reflect-ng-class=""><i _ngcontent-gud-c71="" class="fa fa-suitcase"></i>Add Suppliers</a></li><li _ngcontent-gud-c71="" class="nav-item"><a _ngcontent-gud-c71="" href="http://localhost:4200/employee" class="nav-link" ng-reflect-ng-class=""><i _ngcontent-gud-c71="" class="fa fa-users"></i> Employees</a></li><li _ngcontent-gud-c71="" class="nav-item"><a _ngcontent-gud-c71="" href="http://localhost:4200/addemployee" class="nav-link" ng-reflect-ng-class=""><i _ngcontent-gud-c71="" class="fa fa-upload"></i>New Employees</a></li><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""><br _ngcontent-gud-c71=""></ul></nav></app-navbar></div><div _ngcontent-gud-c78="" class="col-10 p-0"><div _ngcontent-gud-c78=""><section _ngcontent-gud-c78="" class="mt-3"><div _ngcontent-gud-c78="" class="container-fluid"><div _ngcontent-gud-c78="" class="page-header ph-radius clearfix"><div _ngcontent-gud-c78="" class="float-left"><h3 _ngcontent-gud-c78="">Product Management</h3></div><div _ngcontent-gud-c78="" class="float-right"><div _ngcontent-gud-c78="" class="d-flex"><nav _ngcontent-gud-c78="" aria-label="breadcrumb"><ol _ngcontent-gud-c78="" class="breadcrumb border-0"><li _ngcontent-gud-c78="" class="breadcrumb-item"><a _ngcontent-gud-c78="" href="http://localhost:4200/dashboard">Dashboard</a></li><li _ngcontent-gud-c78="" class="breadcrumb-item"><a _ngcontent-gud-c78="" href="http://localhost:4200/report">Products</a></li><li _ngcontent-gud-c78="" aria-current="page" class="breadcrumb-item active"> Add Products </li></ol></nav></div></div></div><div _ngcontent-gud-c78="" class="content-wrapper mt-0 p-0"><div _ngcontent-gud-c78="" class="row"><div _ngcontent-gud-c78="" class="col-lg-12"><div _ngcontent-gud-c78="" class="form-row"><div _ngcontent-gud-c78="" class="container"><div _ngcontent-gud-c78="" class="row mt-2"><div _ngcontent-gud-c78="" class="col-2"><label _ngcontent-gud-c78="" for="fname">Product code</label></div><div _ngcontent-gud-c78="" class="col-10"><input _ngcontent-gud-c78="" type="text" id="fname" name="Product code" placeholder="product code" ng-reflect-name="Product code" ng-reflect-model="" class="ng-untouched ng-pristine ng-valid"></div></div><div _ngcontent-gud-c78="" class="row mt-2"><div _ngcontent-gud-c78="" class="col-2"><label _ngcontent-gud-c78="" for="lname">Product Title</label></div><div _ngcontent-gud-c78="" class="col-10"><input _ngcontent-gud-c78="" type="text" id="lname" name="Product name" placeholder="Product name.." ng-reflect-name="Product name" ng-reflect-model="" class="ng-untouched ng-pristine ng-valid"></div></div><div _ngcontent-gud-c78="" class="row mt-2"><div _ngcontent-gud-c78="" class="col-2"><label _ngcontent-gud-c78="" for="fname">Product Brand</label></div><div _ngcontent-gud-c78="" class="col-10"><input _ngcontent-gud-c78="" type="text" id="fname" name="Product brand" placeholder="product brand...." ng-reflect-name="Product brand" ng-reflect-model="" class="ng-untouched ng-pristine ng-valid"></div></div><div _ngcontent-gud-c78="" class="row mt-2"><div _ngcontent-gud-c78="" class="col-2"><label _ngcontent-gud-c78="" for="fname">Total Stock</label></div><div _ngcontent-gud-c78="" class="col-10"><input _ngcontent-gud-c78="" type="number" id="fname" name="stock" placeholder="enter the total stock" ng-reflect-name="stock" ng-reflect-model="" class="ng-untouched ng-pristine ng-valid"></div></div><div _ngcontent-gud-c78="" class="row mt-2"><div _ngcontent-gud-c78="" class="col-2"><label _ngcontent-gud-c78="" for="fname">Cost Per Item </label></div><div _ngcontent-gud-c78="" class="col-10"><input _ngcontent-gud-c78="" type="number" id="fname" name="costperitem" placeholder="enter the cost one item" ng-reflect-name="costperitem" ng-reflect-model="" class="ng-untouched ng-pristine ng-valid"></div></div><div _ngcontent-gud-c78="" class="row mt-2"><div _ngcontent-gud-c78="" class="col-2"><label _ngcontent-gud-c78="" for="fname">Total Cost </label></div><div _ngcontent-gud-c78="" class="col-10"><input _ngcontent-gud-c78="" type="number" id="fname" name="costperitem" placeholder="Total Cost....." ng-reflect-name="costperitem" ng-reflect-model="" class="ng-untouched ng-pristine ng-valid"></div></div><div _ngcontent-gud-c78="" class="row mt-2"><div _ngcontent-gud-c78="" class="col-2"><label _ngcontent-gud-c78="" for="subject">Subject</label></div><div _ngcontent-gud-c78="" class="col-10"><textarea _ngcontent-gud-c78="" id="subject" name="subject" placeholder="Write something.." style="height: 200px;" ng-reflect-name="subject" ng-reflect-model="" class="ng-untouched ng-pristine ng-valid"></textarea></div></div><div _ngcontent-gud-c78="" class="row mt-2"><input _ngcontent-gud-c78="" type="submit" value="Submit"></div></div></div></div></div></div></div></section></div><app-footer _ngcontent-gud-c78="" _nghost-gud-c70=""><h5 _ngcontent-gud-c70="">TCE-Inventory_Mananging_system- copyright © 2022</h5></app-footer></div></div></app-addreport><!--container--></app-root>
+<script src="./Adding product_files/runtime.js.download" type="module"></script><script src="./Adding product_files/polyfills.js.download" type="module"></script><script src="./Adding product_files/styles.js.download" defer=""></script><script src="./Adding product_files/vendor.js.download" type="module"></script><script src="./Adding product_files/main.js.download" type="module"></script>
+
+</body></html>
