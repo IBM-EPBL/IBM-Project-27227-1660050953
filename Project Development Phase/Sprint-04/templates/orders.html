@@ -1,0 +1,32 @@
+{% extends 'base2.html '%} {% block head %}
+<title>Orders</title>
+{% endblock%} {%block body%}
+<h2 class="pb-3" style="border-bottom:1px solid white ;">Orders</h2>
+<br> <br>
+
+<div class="forms-wrapper">
+  <form action="{{url_for('createOrder') }}" method="post">
+    <h3>Create Order</h3>
+    <div class="field">
+      <label class="custom-label" for="item">Enter Stock ID</label>
+      <input class="text-inputs" type="text" name="stock_id" placeholder="1" />
+    </div>
+    <div class="field">
+      <label class="custom-label" for="item">Enter Quantity</label>
+      <input class="text-inputs" type="number" name="quantity" placeholder="10" />
+    </div>
+    <button class="submit-button">Create</button>
+  </form>
+
+  <form action="{{url_for('cancelOrder') }}" method="post">
+    <h3>Cancel Order</h3>
+    <div class="field">
+      <label class="custom-label" for="item">Enter Order ID</label>
+      <input class="text-inputs" name="order_id" type="number" placeholder="1" />
+    </div>
+    <button class="submit-button red-button">Cancel</button>
+  </form>
+</div>
+<br><br>
+{% include 'table.html' %} 
+{% endblock%}
